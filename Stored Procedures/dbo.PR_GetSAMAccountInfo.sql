@@ -1,0 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+create PROCEDURE [dbo].[PR_GetSAMAccountInfo]
+@UserId varchar(30)
+as
+GO

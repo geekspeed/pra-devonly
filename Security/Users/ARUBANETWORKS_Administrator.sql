@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'ARUBANETWORKS\administrator')
+CREATE LOGIN [ARUBANETWORKS\administrator] FROM WINDOWS
+GO
+CREATE USER [ARUBANETWORKS\Administrator] FOR LOGIN [ARUBANETWORKS\administrator]
+GO

@@ -1,0 +1,5 @@
+IF NOT EXISTS (SELECT * FROM master.dbo.syslogins WHERE loginname = N'ARUBANETWORKS\svc-sox-prapp')
+CREATE LOGIN [ARUBANETWORKS\svc-sox-prapp] FROM WINDOWS
+GO
+CREATE USER [ARUBANETWORKS\svc-sox-prapp] FOR LOGIN [ARUBANETWORKS\svc-sox-prapp]
+GO
