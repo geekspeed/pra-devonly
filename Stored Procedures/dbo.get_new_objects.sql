@@ -5,6 +5,7 @@ SET ANSI_NULLS ON
 GO
 
 --not changing anything  - vivek 2013-10-17
+--PRV3 changes
 
 CREATE proc [dbo].[get_new_objects]
 	@begin_date datetime,
@@ -19,6 +20,7 @@ end
 
 
 GO
+
 
 GRANT EXECUTE ON  [dbo].[get_new_objects] TO [ARUBANETWORKS\preddy]
 GO
